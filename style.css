@@ -190,7 +190,6 @@ html, body {
             margin: 2rem auto;
             padding: 1rem;
             display: flex;
-            justify-content: center; /* Center the icons horizontally */
             align-items: center;
           }
           
