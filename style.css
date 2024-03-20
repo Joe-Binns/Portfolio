@@ -1,0 +1,545 @@
+/* 
+Purple 734B5E
+Ornage? F5D3C8
+Light Gray BCBDC0
+Gray 8A8D91
+Dark Gray 565857
+buff: #d8a47fff;
+coral: #ef8354ff;
+bright-pink-crayola: #ee4b6aff;
+amaranth: #df3b57ff;
+caribbean-current: #0f7173ff;
+*/
+
+* {
+    margin: 0;
+    padding: 0;    box-sizing: border-box;
+}
+
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+/* --- Nav bar ---*/
+    .navbar {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000; 
+    }
+    #navbar-container > a, #navbar-container > div > div > a {
+        color:#ffffff;
+    }
+    /* Style for nav links */
+    .nav-item.nav-link {
+        transition: all 0.3s ease; /* Smooth transition for the hover effect */
+        padding: 10px  ; /* Adjust padding as needed */
+        font-size: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: 0 10px; /* Add some space between each nav item */
+        width: 120px; /* Set the width of each nav item */
+        }
+
+    #nav-title-title {
+        font-weight: bold; /* Makes the text bold */
+        font-size: 2rem; /* Sets the font size to be larger, adjust as needed */
+        line-height: 1.2; /* Adjusts the spacing between lines of text, if necessary */
+        /* Add transition for opacity and visibility */
+        transition: opacity 0.5s, visibility 0.5s;
+        opacity: 1;  /* Start fully visible */
+    }
+
+    #nav-title-title.invisible {
+      opacity: 0;  /* Fully transparent */
+      visibility: hidden;  /* Hide the element */
+      transition: opacity 0.167s, visibility 0.167s; /* Adjusted to be three times faster */
+    }
+
+    /* Hover effect */
+    .nav-item.nav-link:hover {
+        background-color: rgba(0, 0, 0, 0.05); /* Change color as desired */
+        border-radius: 5px; /* Rounded corners for the box */
+    }
+
+    .navbar-brand {
+        padding-left: 10vw; /* Adjust this value as needed */
+    }
+
+    html, body {
+        height: 100%;
+        margin: 0;
+        overflow: hidden; /* Prevent default scrolling */
+    }
+    
+    .navbar {
+        width: 100%;
+        position: fixed;
+        top: 0;
+        z-index: 1000; 
+    }
+    
+    .full-width-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        max-width: 100vw;
+        height: 400vh; /* 4 sections * 100vh each */
+    }
+    
+    .section {
+        width: 100%;
+        height: 100vh; /* This should make each section fill the screen height */
+        overflow: hidden; /* This prevents content from causing the section to expand */
+        box-sizing: border-box; /* Include padding and border in the element's total dimensions */
+        padding-top: 87px; /* Adjust if you have a fixed navbar height */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    
+
+    /* -- Section 1 -- */
+        #home {
+            color: white; /* Text color */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 50px; /* Adjust padding as needed */
+        }
+        
+        #home .content-center {
+            max-width: 600px; /* Adjust width as needed */
+        }
+        
+        #home h1 {
+            font-size: 2.5em; /* Adjust font size as needed */
+            margin-top: 20px;
+        }
+        
+        #home p {
+            font-size: 1em; /* Adjust font size as needed */
+            margin-bottom: 30px;
+        }
+        
+        #home .contact-me-btn {
+            background: none;
+            border: 2px solid white;
+            color: white;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        
+        #home .contact-me-btn:hover {
+            background-color: white;
+        }
+        
+        #home .bitmoji {
+            width: 175px; /* Adjust size as needed */
+            height: auto;
+            border-radius: 50%; /* Circular image */
+        }
+
+          
+          /* Rotating text */
+          .intro {
+            text-align: center;
+            font-size: 1.5em; /* Adjust as needed */
+            margin-top: 20px; /* Adjust as needed */
+        }
+        
+        .rotating-text {
+            margin-top: 10px;
+            font-weight: bold;
+            height: 30px; /* Adjust based on text size */
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .rotating-text span {
+            display: block;
+            position: absolute;
+            width: 100%;
+            opacity: 0;
+            transition: opacity 0.6s, transform 0.6s;
+        }
+        
+        .final-text {
+            margin-top: 10px;
+            font-style: italic;
+        }
+
+        #home .social-container {
+            background-color: #C5C6C7;
+            border-radius: 25px;
+            max-width: 80vw;
+            margin: 2rem auto;
+            padding: 1rem;
+            display: flex;
+            justify-content: center; /* Center the icons horizontally */
+            align-items: center;
+          }
+          
+          #home .social-inner {
+            display: flex;
+            justify-content: space-around; /* Space out the icons evenly */
+            align-items: center;
+            width: 50%; /* Adjust width as needed to space out icons */
+          }
+          
+          #home .social-link {
+            font-size: 2rem; /* Adjust size as needed */
+            color:#0B0C10; /* Color for the icons */
+            margin: 0 30px; /* Space out the icons */
+            transition: color 0.3s ease; /* Transition for hover effect */
+          }
+          
+          #home .social-link:hover {
+            color:#66fcf1; /* Change color on hover */
+          }
+          
+          #home .social-link i {
+            transition: transform 0.3s ease; /* Smooth scaling transition */
+          }
+          
+          #home .social-link:hover i {
+            transform: scale(1.1); /* Slightly enlarge icons on hover */
+          }
+          
+          .contact-container {
+            color: #0B0C10;
+            background-color: #C5C6C7; /* Color for the container */
+            border-radius: 25px; /* Rounded corners */
+            max-width: 80vw; /* Adjust as needed */
+            margin: 2rem auto; /* Adjust margin */
+            padding: 1rem; /* Adjust padding */
+            display: flex;
+            justify-content: center;
+            align-items: center; /* Center vertically */
+        }
+        
+        .contact-btn {
+            font-size: 2rem; /* Adjust size as needed */
+            color: #0B0C10; /* Color for the icons */
+            text-decoration: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            margin: 0 30px; /* Space out the icons */
+            transition: color 0.3s ease; /* Transition for hover effect */
+        }
+        
+        .contact-btn i {
+            margin-right: 10px; /* Add space between the icon and text */
+            transition: transform 0.3s ease; /* Smooth scaling transition */
+        }
+        
+        .contact-btn:hover {
+            color: #66fcf1; /* Change color on hover */
+        }
+        
+        .contact-btn:hover i {
+            transform: scale(1.1); /* Slightly enlarge icons on hover */
+        }
+        
+        
+        /* --- Section 2 --- */
+        #websites {
+            display: flex;
+            overflow-x: auto;
+            min-width: 100vw; /* Ensures this container fits within the viewport width */
+            scroll-snap-type: x mandatory; /* For smooth scrolling/snapping */
+        }
+        
+        .scroll-container {
+            display: flex;
+            min-width: 100vw; /* Ensures this container fits within the viewport width */
+            overflow-x: auto; /* Allows horizontal scrolling */
+            width: calc((100vw)); /* Ensures the container fits within the viewport width */
+            scroll-snap-type: x mandatory; /* Optional: For smooth scrolling/snapping */
+        }
+        
+        .scroll-section {
+            display: flex; /* Enable Flexbox */
+            min-width: 100vw; /* Ensures this container fits within the viewport width */
+            margin: 0px; /* Spacing around each section */
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            padding: 0; /* Updated from 'auto' which is not a valid value for padding */
+            overflow-x: auto; /* Allows horizontal scrolling */
+            -webkit-overflow-scrolling: touch; /* Smooth scrolling on touch devices */
+            scrollbar-width: none; /* For Firefox */
+
+            flex: 0 0 100vw; /* Each section's base width is 100% of the viewport width */
+            transition: transform 0.5s ease-out; /* Smooth transition for transform */
+            will-change: transform; /* Optimizes animations */
+          }
+
+          .scroll-container::-webkit-scrollbar {
+            display: none; /* For Chrome, Safari, and Opera */
+        }
+          
+          .scroll-section-inner {
+            min-height: 85%;
+            background-color:#ffffff;
+            border-radius: 25px;
+            min-width: 90vw;
+            max-width: 90vw;
+            display: flex; /* Enable Flexbox */
+            margin: 10px; /* Keeps the inner section's margin */
+            align-items: center; /* Center vertically */
+          }
+
+          .left-column {
+            border-radius:25px 0px 0px 25px ; /* Correct syntax: Top-left, Top-right, Bottom-right, Bottom-left */
+          }
+
+          .right-column {
+            border-radius: 0px 25px 25px 0px; /* Correct syntax: Top-left, Top-right, Bottom-right, Bottom-left */
+          }
+
+          .left-column, .right-column {
+            color:#0B0C10;
+            flex: 1; /* Each column takes up an equal amount of space */
+            display: flex;
+            flex-direction: column; /* Stack children vertically */          }
+
+          
+          .left-column img {
+            border-radius:25px 0px 0px 25px ; /* Correct syntax: Top-left, Top-right, Bottom-right, Bottom-left */
+            flex-grow: 3; /* Image takes up 2/3 of the space */
+            width: 100%; /* Make the image fill the column width */
+            object-fit:cover; /* Adjust this as needed to control image scaling */
+          }
+
+          .reversed-left-column, .reversed-right-column {
+            /* Resetting border-radius for reversed layout */
+            border-radius: 0px 0px 0px 0px; /* Adjusted for the reversed-left-column */
+          }
+          
+          .reversed-left-column .text-content {
+            /* Apply the flipped border-radius values here */
+            border-radius: 0px 25px 25px 0px; /* Adjusted for the reversed-left-column */
+            
+          }
+          .text-content{
+            padding: 35px;
+          }
+          
+          
+          .reversed-right-column img {
+            border-radius: 0px 25px 25px 0px; /* Adjusted for the reversed-left-column */
+            flex-grow: 3; /* Image takes up 2/3 of the space */
+            width: 100%; /* Make the image fill the column width */
+            object-fit:cover; /* Adjust this as needed to control image scaling */
+          }
+          
+          .right-column .text-content {
+            flex-grow: 2; /* Text content takes up 2/3 of the space */
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end; /* Align content to the bottom */
+            padding: 0px; /* Spacing around the text */
+          }
+          
+          /* Styling for the gaps */
+          .left-column::after, .right-column::before {
+            content: "";
+            flex-grow: 1; /* Each gap takes up 1/3 of the space */
+          }
+        
+        /* Class to add to the section when it's active/viewable */
+        .active-section {
+            transform: translateX(-100%); /* Slide into view */
+        }
+        
+        /* Class to add to section when it's being hidden */
+        .hide-section {
+            transform: translateX(-200%); /* Slide out to the left */
+        }
+        
+        /* General styles for all left arrows */
+        .websites-left-arrow, .games-left-arrow, .software-left-arrow {
+          left: 1%; /* Adjust from the left side */
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          background-color: #66FCF1; /* Example color, adjust as needed */
+          color: white;
+          border: none;
+          border-radius: 50%;
+          width: 40px; /* Adjust size as needed */
+          height: 40px;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          z-index: 1010; /* Ensure it's above other elements */
+          opacity: 0.8; /* Slightly transparent */
+          transition: opacity 0.3s ease; /* Smooth transition for hover effect */
+        }
+
+        /* General styles for all right arrows */
+        .websites-right-arrow, .games-right-arrow, .software-right-arrow {
+          right: 1%; /* Adjust from the right side */
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          background-color: #66FCF1; /* Example color, adjust as needed */
+          color: white;
+          border: none;
+          border-radius: 50%;
+          width: 40px; /* Adjust size as needed */
+          height: 40px;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          z-index: 1010; /* Ensure it's above other elements */
+          opacity: 0.8; /* Slightly transparent */
+          transition: opacity 0.3s ease; /* Smooth transition for hover effect */
+        }
+
+        /* Enhanced hover effect for all arrows */
+        .left-arrow:hover, .right-arrow:hover, 
+        .games-left-arrow:hover, .games-right-arrow:hover, 
+        .software-left-arrow:hover, .software-right-arrow:hover {
+          opacity: 1; /* Fully opaque on hover */
+        }
+          
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            #home h1 {
+            font-size: 2em; /* Smaller font size on mobile */
+            }
+            #home p {
+            font-size: 0.8em; /* Smaller font size on mobile */
+            }
+        }
+      
+        .cursor-blur {
+            pointer-events: none; /* Ignore the element in mouse events */
+            position: absolute;
+            border-radius: 50%;
+            width: 130px; /* Size of the blur effect */
+            height: 130px;
+            margin-top: -5vh; /* Offset to center the blur on the cursor */
+            margin-left: -5vw;
+            background: rgba(255, 255, 255, 0.35); /* White color with transparency */
+            filter: blur(50px); /* Blur effect */
+            display: none; /* Start as not displayed */
+            z-index: 1000; /* High z-index to ensure it's above the background but below content */
+        }
+        
+    /* Section colors */
+    #home { 
+        background-color: #1F2833; 
+        width: 100vw;}
+    #websites { 
+        background-color: #0B0C10; 
+
+        text-align: center;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+
+        position: relative;
+        overflow: hidden;
+    }
+    #games { 
+        background-color: #1F2833; 
+        text-align: center;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+
+        position: relative;
+        overflow: hidden;
+      }
+    #software { 
+        background-color: #0B0C10; 
+        text-align: center;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+
+        position: relative;
+        overflow: hidden;
+      }
+
+      
+      #contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #ffffff;
+        background-color: #1F2833; /* Use the same color as in the Home section */
+      }
+
+      .contact-form-container {
+        background-color: #0B0C10; /* Purple background color */
+        border-radius: 10px; /* Rounded corners */
+        padding: 40px;
+        max-width: 500px; /* Adjust width as per your design preference */
+        margin: 0 auto; /* Center the form container */
+        text-align: center; /* Center the text inside the form */
+        color: white; /* Text color */
+    }
+      
+    #contact-form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .form-label {
+      display: block;
+      margin-bottom: 5px; /* Spacing between the label and the input */
+    }
+      
+      #contact-form input,
+      #contact-form textarea {
+        width: 100%; /* Full width */
+        padding: 10px;
+        margin-bottom: 20px; /* Space between form elements */
+        border: 1px solid #ccc; /* Light grey border */
+        border-radius: 5px; /* Rounded corners */
+        font-family: 'Poppins', sans-serif;
+      }
+      
+      #contact-form textarea {
+        height: 150px; /* Height of the textarea */
+        resize: vertical; /* Allows the textarea to be resized vertically */
+      }
+      
+      #contact-form button {
+        background-color: #BCBDC0; /* Light grey button color */
+        color: #565857; /* Dark grey text */
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px; /* Rounded corners */
+        cursor: pointer;
+        transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+      }
+      
+      #contact-form button:hover {
+        background-color: #66fcf1; /* Hover background to match your theme */
+      }
+      

@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio</title>
+  <link href="style.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/846f3c280c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="cursor-blur" class="cursor-blur"></div>
+<nav class="navbar navbar-expand-lg sticky-top bg-light">
+    <div class="container-fluid" id="navbar-container">
+        <a href="#" class="navbar-brand">
+          <div>
+              <span id="nav-title-title">Home</span>
+          </div>
+        </a>
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="navbar-nav ms-auto">
+              <a href="#" class="nav-item nav-link" id="nav-link-home"><i class="fa fa-home"></i></a>
+              <a href="#" class="nav-item nav-link" id="nav-link-websites"><i class="fa fa-globe"></i></a>
+              <a href="#" class="nav-item nav-link" id="nav-link-games"><i class="fa fa-gamepad"></i></a>
+              <a href="#" class="nav-item nav-link" id="nav-link-software"><i class="fa fa-code"></i></a>
+              <a href="#" class="nav-item nav-link" id="nav-link-contact"><i class="fa fa-envelope"></i></a>
+          </div>
+      </div>
+    </div>
+</nav>
+<div class="full-width-container">
+  <div class="section" id="home">
+    <!-- Content for the home section -->
+    <div class="content-center">
+      
+      <img src="Images/bitmoji.png" alt="My Bitmoji" class="bitmoji"/>
+      <div class="intro">
+        <span>I'm a...</span>
+          <div id="rotating-text" class="rotating-text">
+            <span>Ui Designer</span>
+            <span>Game Developer</span>
+            <span>Backend Engineer</span>
+            <span>App Developer</span>
+            <span>Web Developer</span>
+        </div>
+        <div class="final-text">But you can call me Joe.</div>
+      </div>
+      <div class="social-container">
+        <div class="social-inner">
+          <a href="https://www.linkedin.com/in/joe-binns-1a51631a0/" class="social-link" target="_blank">
+            <i class="fa fa-linkedin"></i>
+          </a>
+          <a href="https://github.com/Joe-Binns" class="social-link" target="_blank">
+            <i class="fa fa-github"></i>
+          </a>
+          <a href="https://twitter.com/your-profile" class="social-link" target="_blank">
+            <i class="fa fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+      <div class="contact-container" id="contact-section">
+        <div class="contact-inner">
+          <h2>Contact Me</h2>
+          <a href="#" class="contact-btn" id="contact-btn"><i class="fas fa-envelope"></i></a>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!----------------- Websites ---------------->
+  <div class="section" id="websites">
+    <div class="scroll-container">
+      <!-- Section A -->
+      <div class="scroll-section" id="sectionA">
+        <div class="scroll-section-inner" id="sectionA-inner">
+          <div class="left-column">
+            <img src="Images/Shadez1_cropped.png" alt="Placeholder Image for Section A" />
+          </div>
+          <div class="right-column">
+            <div class="text-content">
+              <h1>Ecommerce Website</h1>
+              <p>A mockup of an online shopping store using Bootstrap for the layout, website has mutiple sections such as featured & new products.
+                Showcases rescalable and good looking layout.</p>
+                <h6>HTML, CSS, JavaScript, Bootstrap</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Section B with reversed layout -->
+      <div class="scroll-section" id="sectionB">
+        <div class="scroll-section-inner" id="sectionB-inner">
+          <div class="left-column reversed-left-column"> <!-- Add reversed class -->
+            <div class="text-content">
+              <h1>Game Suggester Website</h1>
+              <p>Website allows the PLAR team to add and manage their existing website templates and
+                showcase them in a well organized and clean manner.</p>
+                <h6>HTML, CSS, JavaScript, PHP, MySQL, Ajax, jQuery, Bootstrap</h6>
+            </div>
+          </div>
+          <div class="right-column reversed-right-column"> <!-- Add reversed class -->
+            <img src="Images/GameSuggester1_cropped.png" alt="Placeholder Image for Section B" />
+          </div>
+        </div>
+      </div>
+      <!-- Section C -->
+      <div class="scroll-section" id="sectionC">
+        <div class="scroll-section-inner" id="sectionA-inner">
+          <div class="left-column">
+            <img src="Images/PLARWebsite.png" alt="Placeholder Image for Section C" />
+          </div>
+          <div class="right-column">
+            <div class="text-content">
+              <h2>Template Showcase Website</h2>
+              <p>Website allows the PLAR team to add and manage their existing website templates and
+                showcase them in a well organized and clean manner.</p>
+              <h6>HTML, CSS, JavaScript, PHP, MySQL, Ajax, jQuery, Bootstrap</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="scroll-arrow websites-left-arrow" id="websitesLeftArrow">&#10094;</button>
+    <button class="scroll-arrow websites-right-arrow" id="websitesRightArrow">&#10095;</button>
+  </div>
+
+<!----------------- Games ---------------->
+  <div class="section" id="games">
+    <div class="scroll-container">
+      <!-- Section A -->
+      <div class="scroll-section" id="sectionA">
+        <div class="scroll-section-inner" id="sectionA-inner">
+          <div class="left-column">
+            <img src="Images/FlamesaberCropped.png" alt="Placeholder Image for Section A" />
+          </div>
+          <div class="right-column">
+            <div class="text-content">
+              <h1>Melee Wave Survival</h1>
+              <p>This is an intense, fast-paced game developed in Unreal Engine 5.3, designed to challenge players through increasingly difficult waves of AI-controlled enemies. Set against a fiery volcanic backdrop that adds to the game’s atmosphere, players must utilize a variety of combat strategies such as various combos and blocking to survive.</p>
+              <p>
+                This project impliments various gameplay fundementals such as: Ai pathing, respawns, sound design, level design, combat mechanics, dynamic waves and more.
+              </p>
+              <h6>Unreal Engine 5.3</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Section B with reversed layout -->
+      <div class="scroll-section" id="sectionB">
+        <div class="scroll-section-inner" id="sectionB-inner">
+          <div class="left-column reversed-left-column"> <!-- Add reversed class -->
+            <div class="text-content">
+              <h1>Space Shooter Arcade</h1>
+              <p>This game is a classic arcade-style game, crafted in Unity. It's an action-packed game where players dodge and shoot their way through enemies, with each hit and maneuver contributing to their score. With a life system that adds tension to every move, respawns that give a chance at redemption, and a score tracker to boast high scores, this game is a thrilling ride from start to finish.</p>
+                <h6>Unity</h6>
+            </div>
+          </div>
+          <div class="right-column reversed-right-column"> <!-- Add reversed class -->
+            <img src="Images/SpaceShooterCropped.png" alt="Placeholder Image for Section B" />
+          </div>
+        </div>
+      </div>
+      <!-- Section C -->
+      <div class="scroll-section" id="sectionC">
+        <div class="scroll-section-inner" id="sectionA-inner">
+          <div class="left-column">
+            <img src="Images/Tower1Cropped.png" alt="Placeholder Image for Section A" />
+          </div>
+          <div class="right-column">
+            <div class="text-content">
+              <h2>Tower Defence</h2>
+              <p>This is a strategic game where players master the art of defense by placing various types of towers along a path to stop waves of oncoming enemies. Each level challenges the player with new waves, and successful defense leads to earning resources for building and upgrading towers. With a straightforward interface and engaging mechanics, the game is a fun mix of strategy and action.</p>
+              <h6>Unity</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Section D -->
+      <div class="scroll-section" id="sectionD">
+        <div class="scroll-section-inner" id="sectionD-inner">
+          <div class="left-column">
+            <img src="Images/PlatformerCombinedCropped.png" alt="Placeholder Image for Section A" />
+          </div>
+          <div class="right-column">
+            <div class="text-content">
+              <h1>2D Platformer</h1>
+              <p>Dive into this classic gaming experience with this 2D Platformer, developed using Unity. Engage in combat with clever enemy AI, mastering attacks and blocks to survive. Navigate through hand crafted levels, where every jump and dash is crucial. With a health system involved, each respawn is a chance to perfect your strategy. Dynamic pathfinding, immersive sound design, and responsive movement mechanics are combined in this game.</p>
+              <h6>Unity</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="scroll-arrow games-left-arrow" id="gamesLeftArrow">&#10094;</button>
+    <button class="scroll-arrow games-right-arrow" id="gamesRightArrow">&#10095;</button>
+  </div>
+
+<!----------------- Software ---------------->
+  <div class="section" id="software">
+    <div class="scroll-container">
+      <!-- Section A -->
+      <div class="scroll-section" id="sectionA">
+        <div class="scroll-section-inner" id="sectionA-inner">
+          <div class="left-column">
+            <img src="Images/bfeditied1CroppedLonger.png" alt="Placeholder Image for Section A" />
+          </div>
+          <div class="right-column">
+            <div class="text-content">
+              <h1>Body Flow Ai</h1>
+              <p>BodyFlow AI is a cutting-edge fitness application that can be downloaded from both the Google Play Store and App Store, created to personalize your fitness journey 
+              using AI technology. It creates customized exercise schedules and dietary plans according to your likes and the gym equipment you have 
+              access to. The AI assistant provides engaging assistance, helping you stay motivated and on target with advice on fitness and nutrition. The app features: </p>
+              <p><b>Customized experience:</b> Specifically designed meal and exercise plans that match your dietary requirements and fitness objectives.</p>
+              <p><b>AI Chat Assistant:</b> Receive guidance, inspiration, and solutions for your health and fitness inquiries from an intelligent AI friend.</p>
+              <p><b>Customize your account:</b> Easily modify settings, monitor your progress, and personalize your experience with a user-friendly interface.</p>
+              <p><b>Memberships:</b> Gain entry to exclusive content and functionalities through versatile subscription choices.</p>
+              <p><b>AI-Generated Plans:</b> Algorithms adjust as you progress, making sure your meal and exercise plans are continuously optimized.</p>
+              <h6>Flutter, Supabase, Revenue cat, Google cloud, Json</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Section B with reversed layout -->
+      <div class="scroll-section" id="sectionB">
+        <div class="scroll-section-inner" id="sectionB-inner">
+          <div class="left-column reversed-left-column"> <!-- Add reversed class -->
+            <div class="text-content">
+              <h1>Manchester United Companion</h1>
+              <p>The app is a comprehensive companion for Manchester United soccer fans, providing a range of interactive features. Users can stay updated 
+                with live league scores, create a custom team roster of their favorite players, delve into the rich history of the club, and personalize their user account for a tailored experience.</p>
+                <h6>Android Studi, Rapid API, Java, Gson, Glide</h6>
+            </div>
+          </div>
+          <div class="right-column reversed-right-column"> <!-- Add reversed class -->
+            <img src="Images/SoccerApp1.png" alt="Placeholder Image for Section B" />
+          </div>
+        </div>
+      </div>
+      <!-- Section C -->
+      <div class="scroll-section" id="sectionC">
+        <div class="scroll-section-inner" id="sectionA-inner">
+          <div class="left-column">
+            <img src="Images/EmotionDetectionCropped.png" alt="Placeholder Image for Section A" />
+          </div>
+          <div class="right-column">
+            <div class="text-content">
+              <h2>Emotion Detection Model</h2>
+              <p>The project explored the use of machine learning for emotion detection through facial recognition. It aimed to advance understanding of how to employ algorithms to interpret human emotions accurately from facial expressions. The project utilized 
+                the FER2013 dataset to train models capable of categorizing emotions, enhancing the way technology interfaces with users by offering a more intuitive digital experience.</p>
+              <p>The machine learning approach began with a RandomForestClassifier, yielding a baseline accuracy of 46.86%. After hyperparameter optimization with GridSearchCV, the accuracy slightly improved to 47.93%. Integrating PCA reduced accuracy to 45.27%, suggesting a loss of valuable features. A deep learning model 
+                implemented with Keras significantly improved the accuracy to approximately 81.16%, demonstrating the effectiveness of convolutional neural networks in handling complex emotional data.</p>
+              <h6>Sklearn, Keras, Tensorflow, FER2013 dataset</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Section D -->
+      <div class="scroll-section" id="sectionD">
+        <div class="scroll-section-inner" id="sectionD-inner">
+          <div class="left-column">
+            <img src="Images/SRS2.png" alt="Placeholder Image for Section D" />
+          </div>
+          <div class="right-column">
+            <div class="text-content">
+              <h1>Esports Fantasy League Proposal</h1>
+              <p>The proposal outlines a detailed strategy for a virtual fantasy league website designed specifically for fans of sports. Designed to provide an engaging and interactive experience, the platform offers secure registration, personalized team management, a betting system with rewards, competitive leaderboards, social networking for connecting with friends, and live score updates for real-time engagement.
+              Beginning with a detailed development strategy, the platform's progression from idea to release is thoughtfully organized. The graphic design of the user interface and experience is carefully crafted to ensure that the visuals are both attractive and functional, with a focus on detail. The strong hosting infrastructure of the platform is designed to ensure a smooth user experience, even during high traffic times.</p>
+              <p>The development process is divided into phases to guarantee a focus on backend stability, frontend aesthetics, and thorough testing for quality and performance. Following the launch, the platform is backed by a thorough maintenance strategy that emphasizes frequent updates, the ability to expand to meet the needs of a larger user population, and strict security measures to protect user information and ensure the reliability of betting operations.</p>
+              <p>This versatile platform goes beyond simply keeping score; it aims to build a community of sports enthusiasts, giving them the opportunity to engage, challenge each other, and appreciate the essence of the sport in a custom virtual league.</p>    
+              <h6>UML Diagrams, Trello, Software Architecure Design</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="scroll-arrow software-left-arrow" id="softwareLeftArrow">&#10094;</button>
+    <button class="scroll-arrow software-right-arrow" id="softwareRightArrow">&#10095;</button>
+  </div>
+
+
+  <div class="section" id="contact">
+    <div class="contact-form-container">
+      <h2>SEND ME A MESSAGE</h2>
+      <form action="https://formspree.io/f/mpzvjjqr" method="POST" id="contact-form">
+          <label for="full-name" class="form-label">Full Name:</label>
+          <input type="text" id="full-name" name="full-name" class="form-input" required>
+  
+          <label for="email" class="form-label">E-mail:</label>
+          <input type="email" id="email" name="email" class="form-input" required>
+  
+          <label for="phone" class="form-label">Phone:</label>
+          <input type="tel" id="phone" name="phone" class="form-input">
+  
+          <label for="message" class="form-label">Your Message:</label>
+          <textarea id="message" name="message" class="form-textarea" required></textarea>
+  
+          <button type="submit" class="form-button">SEND</button>
+      </form>
+  </div>
+  </div>
+
+  
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
