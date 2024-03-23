@@ -72,7 +72,6 @@ html, body {
     html, body {
         height: 100%;
         margin: 0;
-        overflow: hidden; /* Prevent default scrolling */
     }
     
     .navbar {
@@ -95,7 +94,7 @@ html, body {
     
         width: 100%;
         height: 100vh; /* This should make each section fill the screen height */
-        overflow: hidden; /* This prevents content from causing the section to expand */
+        overflow-y: auto; /* Consider changing this to `overflow-y: auto;` or removing it */
         box-sizing: border-box; /* Include padding and border in the element's total dimensions */
         padding-top: 87px; /* Adjust if you have a fixed navbar height */
         display: flex;
