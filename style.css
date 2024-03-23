@@ -283,6 +283,17 @@ html, body {
             display: none; /* For Chrome, Safari, and Opera */
         }
 
+        .section-text-card {
+          background-color: #0203033a;
+          border-radius: 15px;
+          padding-top: 20px;
+          padding-left: 10px;
+          padding-right: 10px;
+          padding-bottom: 20px;
+          margin-top: 2vh;
+          margin-bottom: 2vh;
+        }
+
         .scroll-section-inner {
           /* Other styles */
           border: 1px solid rgba(0, 0, 0, 0.45); /* Thin, slightly transparent border */
@@ -309,6 +320,10 @@ html, body {
 
           .right-column {
             border-radius: 0px 25px 25px 0px; /* Correct syntax: Top-left, Top-right, Bottom-right, Bottom-left */
+            display: flex;            /* Enable Flexbox */
+            flex-direction: column;   /* Stack children vertically */
+            justify-content: space-around; /* Evenly distribute children with space around them */
+            height: 100%;  
           }
 
           .left-column, .right-column {
@@ -327,11 +342,18 @@ html, body {
           }
 
           .left-column img {
-            border-radius:25px 0px 0px 25px ; /* Correct syntax: Top-left, Top-right, Bottom-right, Bottom-left */
+            border-radius:25px ; /* Correct syntax: Top-left, Top-right, Bottom-right, Bottom-left */
           }
 
           .reversed-right-column img {
-            border-radius: 0px 25px 25px 0px; /* Adjusted for the reversed-left-column */
+            border-radius: 25px; /* Adjusted for the reversed-left-column */
+          }
+
+          .reversed-left-column {
+            display: flex;            /* Enable Flexbox */
+            flex-direction: column;   /* Stack children vertically */
+            justify-content: space-around; /* Evenly distribute children with space around them */
+            height: 100%;  
           }
 
           .left-column img, .reversed-right-column img {
